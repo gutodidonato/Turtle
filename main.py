@@ -60,9 +60,15 @@ def random_walk(walks):
         timot.color(limite_de_cores())
         timot.right(random.choice(moves))
         timot.forward(50)
+        
+def spirograph():
+    timot.speed("fastest")
+    for i in range(100):
+        timot.color(limite_de_cores())
+        timot.circle(100)
+        timot.left(5)    
 
-random_walk(1000)
-
+spirograph()
 
 
 screen.exitonclick()
